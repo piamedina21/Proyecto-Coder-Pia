@@ -1,0 +1,211 @@
+
+
+@font-face {
+
+	font-family: 'poppins';
+	src: url("../fonts/poppins/Poppins-Regular.ttf");
+}
+
+body{
+
+font-family: 'poppins';
+
+}
+
+.fondo-sitio {
+	background-color: #f1fdfd;
+
+
+}
+
+
+.borde_morado {
+
+border-style: solid;
+border-width: 1px;
+border-color: purple;
+}
+
+
+h1 { color: purple;
+
+}
+
+h2{
+	color: #5882bc;
+}
+
+nav{
+
+
+	background-color: purple;
+}
+
+
+span:hover {
+  background-color: white;
+  
+}
+span{
+
+background-color: #a7acec;
+border: solid 1px;
+border-color: whitesmoke;
+margin-right: 2vw;
+
+
+}
+
+/*menu principal*/
+
+
+
+#color-fondo1{
+
+
+	background: #a7acec;
+	margin-top: 0% ;
+	padding-top: -5%;
+
+
+
+}
+
+table{
+
+border: solid 1px;
+}
+   
+
+#imagenes_servicios{
+	text-align: center;
+}
+
+
+.lista-1{
+	list-style-type: none;
+
+
+}
+#lista-2{
+	list-style-type: circle;
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+}
+
+footer{
+
+	width: 100%;
+	background-color: #232323;
+  color: #ffffff;   
+	text-align: center;
+	
+}
+
+.cursiva{
+	font-style: italic;
+}
+
+section{
+	text-align: center;
+}
+
+.sinsubrayar{
+	text-decoration: none;
+
+}
+
+
+/*Aplicando Grid*/
+
+.grid {
+	   display: grid;
+	   grid-template-columns: repeat(5, 1fr) 90vh; 
+     grid-template-rows: repeat(1, 1fr);
+}
+
+.gridmain{
+	      display: grid;
+	      grid-template-columns: repeat(2, 1fr);
+	      border: solid 3px lightblue ;
+	      padding: 20px;
+
+
+}
+
+/*Grid por areas*/
+
+#grid-area{
+	display: grid;
+  grid-template-areas: 
+
+"cabeza"
+"menu"
+"principal"
+"servicios"
+"pie"
+;
+
+}
+
+/* Nombrar cada area */
+header {
+	    grid-area: cabeza;
+
+	  }
+
+
+main {
+	    grid-area: principal;
+
+}
+
+footer {
+	    grid-area: pie;
+
+}
+
+#servicios {
+	     grid-area: servicios;
+
+}
+
+nav {
+	  grid-area: menu;
+
+/*flex en menu*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-content: left;
+}
+
+.estrategias{
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+}
+
+/*RESPONSIVE DESING*/
+/*MEDIA QUERIES*/
+
+/*Desktop*/
+@media (min-width: 1024px){
+
+}
+
+
+/*Tablet*/
+@media (min-width: 480px) and (max-width: 1023px){
+	body{
+		background-color: pink !important;
+	}
+}
+
+/*Smartphone*/
+@media (max-width: 479px){
+	body{
+		background-color: yellow;
+	}
+}
