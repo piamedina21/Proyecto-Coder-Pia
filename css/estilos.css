@@ -88,7 +88,6 @@ border: solid 1px;
 
 }
 #lista-2{
-	list-style-type: circle;
 	display: flex;
 	flex-flow: column;
 	align-content: center;
@@ -208,4 +207,13 @@ nav {
 	body{
 		background-color: yellow;
 	}
+}
+
+/*TRANSICIONES*/
+
+.transicion {
+	transition: width 2s;
+}
+.transicion:hover {
+	width: 200px;
 }
